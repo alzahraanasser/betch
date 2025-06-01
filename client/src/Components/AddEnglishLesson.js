@@ -8,10 +8,8 @@ const AddEnglishLesson = () => {
   const [lessonTitle, setLessonTitle] = useState("");
   const [lessonCode, setLessonCode] = useState("");
   const [message, setMessage] = useState(null);
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const { lessons, status, error } = useSelector((state) => state.englishLessons);
   const { isLogin } = useSelector((state) => state.users);
 
